@@ -1,0 +1,11 @@
+<div class="header-right-bottom">
+  @for (item of srcs; track $index)
+  {
+    <app-item-a [src]="item.src"
+    ></app-item-a>
+  }
+  <a [routerLink]= "['/cart']">
+  <mat-icon matBadge="{{ totalQuantity }}">shopping_bag</mat-icon>
+  </a>
+</div>
+

@@ -1,0 +1,9 @@
+<div class="header-left">
+  <a href="#"><img src="image/lotteria_logo.png" alt=""></a>
+  @for (item of items; track  $index)
+  {
+    <app-item-link [Name]="item.Name"
+                   [path]="item.path"
+    ></app-item-link>
+  }
+</div>

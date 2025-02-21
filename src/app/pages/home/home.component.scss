@@ -1,0 +1,17 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  width: 100%;
+  height: 1000px;
+  white-space: wrap;
+  display: flex;
+  justify-content: space-between;
+  //align-items: center;
+  gap: 20px;
+  grid-gap: 20px;
+  //white-space: ;
+}

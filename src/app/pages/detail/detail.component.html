@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="field-back">
+    <button mat-raised-button (click)="goBack()">← Quay lại</button>
+  </div>
+  <div class="product">
+    <div class="left">
+      <div class="field-img">
+        <img alt="Loy Set" src="{{ currentProduct?.src }}">
+        <div class="field-bottom">
+          <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+            <mat-icon>favorite</mat-icon>
+          </button>
+        </div>
+      </div>
+      <h3>{{ currentProduct?.name }}</h3>
+      <div class="field-price">{{ currentProduct?.price }} ₫</div>
+      <div class="price-old-img">
+        <img src="image/shoppingmode_24dp_FF5B6A_FILL0_wght400_GRAD0_opsz24.png" alt="">
+        <p><s>{{ currentProduct?.oldprice }} <u>đ</u></s></p>
+      </div>
+      <div class="txt-note">Bạn tiết kiệm được <strong class="text-red">32.000 ₫</strong> sau khi giảm giá.</div>
+      <div class="field-note text-grey">
+        <p>{{ currentProduct?.item1 }}</p>
+        <p>{{ currentProduct?.item2 }}</p>
+      </div>
+    </div>
+    <div class="col-12 col-lg-6">
+      <div class="field-content">
+        <h4>Ngon hơn khi ăn kèm Burger</h4>
+        <ul class="list-options">
+          <li><img src="https://www.lotteria.vn/media/catalog/product/cache/60aaa11249bf2e8956d21569ad283f68/l/s/ls0023_4.png" alt=""><div class="sot"><div><span>Phô Mai Miếng</span></div><div class="price-icon">+7.000 ₫ <mat-icon>close</mat-icon></div></div></li>
+          <li><img src="https://www.lotteria.vn/media/catalog/product/cache/60aaa11249bf2e8956d21569ad283f68/e/x/extra_fried_egg_1_.png" alt=""><div class="sot"><div><span>Trứng</span></div><div class="price-icon">+7.000 ₫ <mat-icon>close</mat-icon></div></div></li>
+        </ul>
+        <h4>Thêm sốt Gà</h4>
+        <ul class="list-options">
+          <li><img src="https://www.lotteria.vn/media/catalog/product/cache/60aaa11249bf2e8956d21569ad283f68/l/c/lc0041_1.png" alt=""><div class="sot"><div><span>Sốt HS</span></div><div class="price-icon">+5.000 ₫ <mat-icon>close</mat-icon></div></div></li>
+          <li><img src="https://www.lotteria.vn/media/catalog/product/cache/60aaa11249bf2e8956d21569ad283f68/l/c/lc0042_4.png" alt=""><div class="sot"><div><span>Sốt Phô Mai</span></div><div class="price-icon">+5.000 ₫ <mat-icon>close</mat-icon></div></div></li>
+          <li><img src="https://www.lotteria.vn/media/catalog/product/cache/60aaa11249bf2e8956d21569ad283f68/l/c/lc0042_4.png" alt=""><div class="sot"><div><span>Sốt Phô Mai</span></div><div class="price-icon">+5.000 ₫ <mat-icon>close</mat-icon></div></div></li>
+          <li><img src="https://www.lotteria.vn/media/catalog/product/cache/60aaa11249bf2e8956d21569ad283f68/l/c/lc0042_4.png" alt=""><div class="sot"><div><span>Sốt Phô Mai</span></div><div class="price-icon">+5.000 ₫ <mat-icon>close</mat-icon></div></div></li>
+        </ul>
+        <div class="nav-bottom">
+          <div class="qty">
+            <span>Số lượng</span>
+            <button class="btn-minus">-</button>
+            <input class="btn-input" type="number" value="1" min="1">
+            <button class="btn-plus">+</button>
+          </div>
+          <button (click)="cartService.addToCart(currentProduct)" class="btn-cart">Thêm vào giỏ hàng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

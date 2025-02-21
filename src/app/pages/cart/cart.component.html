@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="cart-section">
+    <h2><p><b style="font-size: 18px">Giỏ hàng của bạn</b> ({{ totalQuantity }} Sản phẩm)</p> <a [routerLink]="['/home']">+ Thêm món ăn</a></h2>
+    @for (item of cart; track $index)
+    {
+      <app-product-cart [src]="item.src"
+                        [Name]="item.name"
+                        [price]="item.price"
+                        [id]="item.id"
+                        [sl]="item.quantity"
+      ></app-product-cart>
+    }
+    <div class="order-note-card">
+      <h4>Ghi chú cho đơn hàng</h4>
+      <input type="text" placeholder="Thêm ghi chú...">
+    </div>
+
+  </div>
+  <div class="checkout-section">
+    <div class="box-border">
+      <div class="checkout-address">
+        <p>Giao hàng đến:</p>
+        <p>Cửa hàng: </p>
+      </div>
+      Thời gian tiếp nhận đơn hàng trực tuyến từ đến hằng ngày
+    </div>
+    <div class="box-border">
+      <h4>Tùy chọn</h4>
+      <label>Lấy dụng cụ ăn uống <mat-slide-toggle></mat-slide-toggle></label>
+      <label>Lấy tương cà<mat-slide-toggle></mat-slide-toggle></label>
+      <label>Lấy tương ớt<mat-slide-toggle></mat-slide-toggle></label>
+    </div>
+    <div class="total-section">
+      <p>Tạm tính: <span>145.000 ₫</span></p>
+      <p class="border">Tổng cộng: <strong>145.000 ₫</strong></p>
+    </div>
+    <button class="btn-payment">Tiếp tục</button>
+  </div>
+</div>

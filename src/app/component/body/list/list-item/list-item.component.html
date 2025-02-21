@@ -1,0 +1,21 @@
+<div [routerLink]= "['/detail', product.id ]" class="list-item">
+  <img src="{{product.src}}" alt="">
+  <div class="list-item-info">
+    <h3>{{product.name}}</h3>
+    <p>{{product.item1}}</p>
+    <p>{{product.item2}}</p>
+
+    <div class="price-and-button">
+      <div class="price">
+        <p>{{product.price}} <u>đ</u></p>
+        <div class="price-old-img">
+          <img src="image/shoppingmode_24dp_FF5B6A_FILL0_wght400_GRAD0_opsz24.png" alt="">
+          <p><s>{{product.oldprice}} <u>đ</u></s></p>
+        </div>
+      </div>
+      <button mat-fab >
+        <mat-icon (click)="cartService.addToCart(product)">add</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>

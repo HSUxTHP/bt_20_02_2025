@@ -1,0 +1,14 @@
+<div class="cart-item">
+  <img src="{{src}}" alt="Loy Set">
+  <div class="cart-info">
+    <h3>{{ Name }}</h3>
+    <p>- {{sl}} x {{ Name }}</p>
+    <p class="price">{{ price }} ₫</p>
+  </div>
+  <div class="cart-actions">
+    <button (click)="decreaseQuantity()" class="btn-minus">-</button>
+    <span class="quantity">1</span>
+    <button (click)="increaseQuantity()" class="btn-plus">+</button>
+    <button (click)="removeProduct()" class="btn-plus">X</button>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="list">
+  @for (item of products ; track $index)
+  {
+    <app-list-item
+    [product]="item"
+    ></app-list-item>
+
+  }
+</div>

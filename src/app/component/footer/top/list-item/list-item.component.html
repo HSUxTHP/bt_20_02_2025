@@ -1,0 +1,11 @@
+<div class="footer-list">
+  <h3>{{ title }}</h3>
+  <ul>
+    @for (item of items ; track $index)
+    {
+      <app-item [href]="item.href"
+                [name]="item.name"
+      ></app-item>
+    }
+  </ul>
+</div>

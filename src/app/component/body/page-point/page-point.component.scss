@@ -1,0 +1,15 @@
+.scoll-item {
+  width: 10px;
+  height: 10px;
+  background-color: #FFABB3;
+  margin-right: 15px;
+  border-radius: 50%;
+
+  :host:first-child {
+    background-color: #FF5B6A;
+  }
+
+  :host:active {
+    background-color: #FF5B6A;
+  }
+}

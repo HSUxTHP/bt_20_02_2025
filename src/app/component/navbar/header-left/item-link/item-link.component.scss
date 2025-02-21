@@ -1,0 +1,43 @@
+a {
+  padding: 15px 12px 15px;
+  width: auto;
+  height: 99px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000;
+  margin: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  /* background-color: yellow; */
+
+}
+
+a:hover {
+  color: #FF5B6A;
+  border-bottom: 2px solid #FF5B6A;
+
+}
+
+
+//a:first-child:hover {
+//  border-bottom: none;
+//}
+
+//a:first-child {
+//  padding: 16px 0 0 0;
+//  width: 100px;
+//  height: 100px;
+//  display: flex;
+//  box-sizing: border-box;
+//}
+
+:host:nth-child(2) a {
+  color: red; /* Ví dụ: đổi màu chữ */
+  border-bottom: 2px solid #FF5B6A;
+}
+
+
+
+
+

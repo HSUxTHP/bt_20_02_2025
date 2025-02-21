@@ -1,0 +1,28 @@
+<div class="footer-top">
+  <div class="footer-top-left">
+    <img src="image/lotteria_logo.png" alt="">
+    <h3>Đăng ký nhận thông tin khuyến mãi
+    </h3>
+    <div class="input-form">
+      <input type="text" placeholder="Nhập email của bạn">
+      <button>Gửi ngay →</button>
+    </div>
+  </div>
+  <div class="footer-top-right">
+    @for (model of models ; track $index) {
+      <app-list-item [title]="model.title"
+                      [items]="model.items"
+      ></app-list-item>
+    }
+    <div class="footer-list">
+      <h3>THEO DÕI</h3>
+      <ul>
+        <li><a href="#"><img src="image/Facebook_logo_(square).png">Facebook</a></li>
+        <li><a href="#"><img src="image/Instagram_logo_2016.svg.webp">Instagram</a></li>
+        <li><a href="#"><img src="image/Icon_of_Zalo.svg.webp">Zalo</a></li>
+        <li></li>
+      </ul>
+      <img src="image/bct.png" class="bct">
+    </div>
+  </div>
+</div>

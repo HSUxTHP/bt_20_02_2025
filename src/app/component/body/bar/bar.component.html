@@ -1,0 +1,6 @@
+<div class="bar">
+  @for (item of categorys; track $index)
+  {
+    <app-card [src]="item.src" [name]="item.name"></app-card>
+  }
+</div>

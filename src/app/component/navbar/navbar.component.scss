@@ -1,0 +1,17 @@
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 207.4px;
+  border-bottom: #e7e4e6 1px solid;
+  position: sticky;
+  top: 0;
+}
+
+:host {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}

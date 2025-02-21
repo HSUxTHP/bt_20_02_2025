@@ -1,0 +1,19 @@
+.header-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+  font-weight: bold;
+  //box-sizing: border-box;
+
+
+  a img {
+    width: 67px;
+    height: 67px;
+    margin: 0 45px 0 0;
+  }
+
+
+
+}
+
