@@ -13,6 +13,11 @@ export const routes: Routes = [
     component: HomeComponent
   },
   {
+    path: '**',
+    redirectTo: 'home'
+
+  },
+  {
     path: '',
     component: HomeComponent
   },
